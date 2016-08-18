@@ -14,8 +14,8 @@
  *
  * Examples:
  * One-shot model:
- *  User: "Alexa, ask n f l Geek for an n f l fact"
- *  Alexa: "Here's your n f l fact: ..."
+ *  User: "Alexa, ask football Geek for an football fact"
+ *  Alexa: "Here's your football fact: ..."
  */
 
 /**
@@ -24,7 +24,7 @@
 var APP_ID = undefined; //OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
 
 /**
- * Array containing n f l facts.
+ * Array containing football facts.
  */
 var FACTS = [
     'Arizona Cardinals ',
@@ -104,7 +104,7 @@ Fact.prototype.intentHandlers = {
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
-        response.ask("You can say tell me an n. f. l. team, or, you can say exit... What can I help you with?", "What can I help you with?");
+        response.ask("You can say tell me a football team, or, you can say exit... What can I help you with?", "What can I help you with?");
     },
 
     "AMAZON.StopIntent": function (intent, session, response) {
@@ -122,12 +122,12 @@ Fact.prototype.intentHandlers = {
  * Gets a random new fact from the list and returns to the user.
  */
 function handleNewFactRequest(response) {
-    // Get a random n f l team from the teams list
+    // Get a random football team from the teams list
     var factIndex = Math.floor(Math.random() * FACTS.length);
     var randomFact = FACTS[factIndex];
 
     // Create speech output
-    var speechOutput = "Here's your n. f. l. team: " + randomFact;
+    var speechOutput = "Here's your football team: " + randomFact;
     var cardTitle = "Your Team";
     response.tellWithCard(speechOutput, cardTitle, speechOutput);
 }
