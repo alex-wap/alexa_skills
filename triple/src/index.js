@@ -78,12 +78,22 @@ Fact.prototype.intentHandlers = {
     },
 
     "AMAZON.StopIntent": function (intent, session, response) {
-        var speechOutput = "Goodbye";
+        var speechOutput = {
+  speech: "<speak>"
+    + "<audio src='https://s3-us-west-1.amazonaws.com/alexa-skill-alex/triple.mp3'/>"
+    + "</speak>",
+  type: AlexaSkill.speechOutputType.SSML
+  };
         response.tell(speechOutput);
     },
 
     "AMAZON.CancelIntent": function (intent, session, response) {
-        var speechOutput = "Goodbye";
+        var speechOutput = {
+  speech: "<speak>"
+    + "<audio src='https://s3-us-west-1.amazonaws.com/alexa-skill-alex/triple.mp3'/>"
+    + "</speak>",
+  type: AlexaSkill.speechOutputType.SSML
+  };
         response.tell(speechOutput);
     }
 };
@@ -92,14 +102,14 @@ Fact.prototype.intentHandlers = {
  * Gets a random new fact from the list and returns to the user.
  */
 function handleNewFactRequest(response) {
-    // Get a random u s state from the state list
-    var factIndex = Math.floor(Math.random() * FACTS.length);
-    var randomFact = FACTS[factIndex];
+    // Get a random fact
+    // var factIndex = Math.floor(Math.random() * FACTS.length);
+    // var randomFact = FACTS[factIndex];
 
     // Create speech output
     var speechOutput = {
   speech: "<speak>"
-    + "<audio src='s3 url here'/>"
+    + "<audio src='s2 mp3 url'/>"
     + "</speak>",
   type: AlexaSkill.speechOutputType.SSML
   },
@@ -108,9 +118,10 @@ function handleNewFactRequest(response) {
     type: AlexaSkill.speechOutputType.PLAIN_TEXT
   };
 
-response.ask(speechOutput, repromptOutput);
+//response.ask(speechOutput, repromptOutput);
+    response.tell(speechOutput).shouldEndSession(true);
     var cardTitle = "Oh Baby A Triple";
-    response.tellWithCard(speechOutput, cardTitle, speechOutput);
+    response.tellWithCard(speechOutput, cardTitle, speechOutput).shouldEndSession(true);
 }
 
 // Create the handler that responds to the Alexa Request.
