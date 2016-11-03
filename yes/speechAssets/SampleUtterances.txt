@@ -1,0 +1,5 @@
+GetNewFactIntent a yes
+GetNewFactIntent tell me a yes
+GetNewFactIntent give me a yes
+GetNewFactIntent tell me something
+GetNewFactIntent give me something
