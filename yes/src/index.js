@@ -14,8 +14,8 @@
  *
  * Examples:
  * One-shot model:
- *  User: "Alexa, start the yes machine"
- *  Alexa: "yes"
+ *  User: "Alexa, start yes machine"
+ *  Alexa: "oh yeah"
  */
 
 /**
@@ -24,13 +24,11 @@
 var APP_ID = undefined; //OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
 
 /**
- * Array containing yes
+ * Array containing oh yeah.
  */
 var FACTS = [
-    'yes',
     'yeah',
-    'for sure',
-    'of course'
+    'oh yeah'
 ];
 
 /**
@@ -76,12 +74,14 @@ Fact.prototype.intentHandlers = {
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
-        response.ask("You can say start the yes machine, or, you can say exit... What can I help you with?", "What can I help you with?");
+        response.ask("You can say play yes machine, or, you can say exit... What can I help you with?", "What can I help you with?");
     },
 
     "AMAZON.StopIntent": function (intent, session, response) {
         var speechOutput = {
-  speech: "yes",
+  speech: "<speak>"
+    + "<audio src='https://s3-us-west-1.amazonaws.com/alexa-skill-alex/yeah.mp3'/>"
+    + "</speak>",
   type: AlexaSkill.speechOutputType.SSML
   };
         response.tell(speechOutput);
@@ -89,7 +89,9 @@ Fact.prototype.intentHandlers = {
 
     "AMAZON.CancelIntent": function (intent, session, response) {
         var speechOutput = {
-  speech: "yes",
+  speech: "<speak>"
+    + "<audio src='https://s3-us-west-1.amazonaws.com/alexa-skill-alex/yeah.mp3'/>"
+    + "</speak>",
   type: AlexaSkill.speechOutputType.SSML
   };
         response.tell(speechOutput);
@@ -106,7 +108,9 @@ function handleNewFactRequest(response) {
 
     // Create speech output
     var speechOutput = {
-  speech: "yes",
+  speech: "<speak>"
+    + "<audio src='https://s3-us-west-1.amazonaws.com/alexa-skill-alex/yeah.mp3'/>"
+    + "</speak>",
   type: AlexaSkill.speechOutputType.SSML
   },
   repromptOutput = {
@@ -116,13 +120,13 @@ function handleNewFactRequest(response) {
 
 //response.ask(speechOutput, repromptOutput);
     response.tell(speechOutput).shouldEndSession(true);
-    var cardTitle = "Yes";
+    var cardTitle = "Oh Yeah";
     response.tellWithCard(speechOutput, cardTitle, speechOutput).shouldEndSession(true);
 }
 
 // Create the handler that responds to the Alexa Request.
 exports.handler = function (event, context) {
-    // Create an instance of yes
+    // Create an instance of yes machine
     var fact = new Fact();
     fact.execute(event, context);
 };
