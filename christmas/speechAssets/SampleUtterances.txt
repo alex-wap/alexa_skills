@@ -1,0 +1,5 @@
+GetNewFactIntent a christmas cheer
+GetNewFactIntent tell me a christmas cheer
+GetNewFactIntent give me christmas cheer
+GetNewFactIntent tell me christmas cheer
+GetNewFactIntent give me some christmas cheer
