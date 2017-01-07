@@ -1,0 +1,6 @@
+GetNewFactIntent a sad trombone
+GetNewFactIntent a trombone
+GetNewFactIntent give me a sad trombone
+GetNewFactIntent give me a trombone
+GetNewFactIntent tell me something
+GetNewFactIntent give me something
