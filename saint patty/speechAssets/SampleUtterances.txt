@@ -1,0 +1,5 @@
+GetNewFactIntent saint patrick
+GetNewFactIntent tell me saint patrick
+GetNewFactIntent give me saint patrick
+GetNewFactIntent tell me some saint patrick
+GetNewFactIntent give me some saint patrick
