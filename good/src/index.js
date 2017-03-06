@@ -14,8 +14,8 @@
  *
  * Examples:
  * One-shot model:
- *  User: "Alexa, start saint patrick"
- *  Alexa: "saint patrick"
+ *  User: "Alexa, start good luck"
+ *  Alexa: "good luck"
  */
 
 /**
@@ -24,11 +24,11 @@
 var APP_ID = undefined; //OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
 
 /**
- * Array containing saint patrick.
+ * Array containing good luck.
  */
 var FACTS = [
-    'saint patrick',
-    'saint patty'
+    'good luck',
+    'good'
 ];
 
 /**
@@ -74,7 +74,7 @@ Fact.prototype.intentHandlers = {
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
-        response.ask("You can say saint patrick, or, you can say exit... What can I help you with?", "What can I help you with?");
+        response.ask("You can say good luck, or, you can say exit... What can I help you with?", "What can I help you with?");
     },
 
     "AMAZON.StopIntent": function (intent, session, response) {
@@ -120,13 +120,13 @@ function handleNewFactRequest(response) {
 
 //response.ask(speechOutput, repromptOutput);
     response.tell(speechOutput).shouldEndSession(true);
-    var cardTitle = "saint patrick";
+    var cardTitle = "good luck";
     response.tellWithCard(speechOutput, cardTitle, speechOutput).shouldEndSession(true);
 }
 
 // Create the handler that responds to the Alexa Request.
 exports.handler = function (event, context) {
-    // Create an instance of saint patrick
+    // Create an instance of good luck
     var fact = new Fact();
     fact.execute(event, context);
 };
