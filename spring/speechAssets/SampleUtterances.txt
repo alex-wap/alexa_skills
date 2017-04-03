@@ -1,0 +1,5 @@
+GetNewFactIntent spring sing
+GetNewFactIntent tell me spring sing
+GetNewFactIntent give me spring sing
+GetNewFactIntent tell me some spring sing
+GetNewFactIntent give me some spring sing
