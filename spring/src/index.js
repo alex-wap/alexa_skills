@@ -80,7 +80,7 @@ Fact.prototype.intentHandlers = {
     "AMAZON.StopIntent": function (intent, session, response) {
         var speechOutput = {
   speech: "<speak>"
-    + "<audio src='https://s3-us-west-1.amazonaws.com/alexa-skill-alex/rick.mp3'/>"
+    + "<audio src='https://s3-us-west-1.amazonaws.com/alexa-skill-alex/airhorns.mp3'/>"
     + "</speak>",
   type: AlexaSkill.speechOutputType.SSML
   };
@@ -90,7 +90,7 @@ Fact.prototype.intentHandlers = {
     "AMAZON.CancelIntent": function (intent, session, response) {
         var speechOutput = {
   speech: "<speak>"
-    + "<audio src='https://s3-us-west-1.amazonaws.com/alexa-skill-alex/rick.mp3'/>"
+    + "<audio src='https://s3-us-west-1.amazonaws.com/alexa-skill-alex/airhorns.mp3'/>"
     + "</speak>",
   type: AlexaSkill.speechOutputType.SSML
   };
@@ -109,7 +109,7 @@ function handleNewFactRequest(response) {
     // Create speech output
     var speechOutput = {
   speech: "<speak>"
-    + "<audio src='https://s3-us-west-1.amazonaws.com/alexa-skill-alex/rick.mp3'/>"
+    + "<audio src='https://s3-us-west-1.amazonaws.com/alexa-skill-alex/airhorns.mp3'/>"
     + "</speak>",
   type: AlexaSkill.speechOutputType.SSML
   },
