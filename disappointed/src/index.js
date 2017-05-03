@@ -14,8 +14,8 @@
  *
  * Examples:
  * One-shot model:
- *  User: "Alexa, start disappointed"
- *  Alexa: "disappointed"
+ *  User: "Alexa, start so disappointed"
+ *  Alexa: "so disappointed"
  */
 
 /**
@@ -24,11 +24,11 @@
 var APP_ID = undefined; //OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
 
 /**
- * Array containing disappointed.
+ * Array containing so disappointed.
  */
 var FACTS = [
-    'disappointed',
-    'a disappointed'
+    'so disappointed',
+    'disappointed'
 ];
 
 /**
@@ -74,7 +74,7 @@ Fact.prototype.intentHandlers = {
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
-        response.ask("You can say play disappointed, or, you can say exit... What can I help you with?", "What can I help you with?");
+        response.ask("You can say play so disappointed, or, you can say exit... What can I help you with?", "What can I help you with?");
     },
 
     "AMAZON.StopIntent": function (intent, session, response) {
@@ -120,13 +120,13 @@ function handleNewFactRequest(response) {
 
 //response.ask(speechOutput, repromptOutput);
     response.tell(speechOutput).shouldEndSession(true);
-    var cardTitle = "disappointed";
+    var cardTitle = "so disappointed";
     response.tellWithCard(speechOutput, cardTitle, speechOutput).shouldEndSession(true);
 }
 
 // Create the handler that responds to the Alexa Request.
 exports.handler = function (event, context) {
-    // Create an instance of disappointed
+    // Create an instance of so disappointed
     var fact = new Fact();
     fact.execute(event, context);
 };
