@@ -1,0 +1,18 @@
+
+
+arn:aws:lambda:us-east-1:573869678907:function:scary
+
+GetNewFactIntent an airhorn
+GetNewFactIntent a scary airhorn
+GetNewFactIntent tell me a airhorn
+GetNewFactIntent tell me a scary airhorn
+GetNewFactIntent give me a airhorn
+GetNewFactIntent give me a scary airhorn
+GetNewFactIntent tell me airhorn
+GetNewFactIntent tell me a scary airhorn
+GetNewFactIntent give me airhorn
+GetNewFactIntent give me a scary airhorn
+GetNewFactIntent give me some airhorn
+GetNewFactIntent give me some scary airhorn
+GetNewFactIntent tell me something
+GetNewFactIntent give me something
