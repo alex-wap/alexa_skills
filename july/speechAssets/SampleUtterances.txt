@@ -1,0 +1,16 @@
+GetNewFactIntent a july firework
+GetNewFactIntent july fireworks
+GetNewFactIntent tell me a firework
+GetNewFactIntent give me a firework
+GetNewFactIntent tell me fireworks
+GetNewFactIntent give me fireworks
+GetNewFactIntent give me some fireworks
+GetNewFactIntent tell me something
+GetNewFactIntent give me something
+GetNewFactIntent tell me a july firework
+GetNewFactIntent give me a july firework
+GetNewFactIntent tell me july fireworks
+GetNewFactIntent give me july fireworks
+GetNewFactIntent give me some july fireworks
+GetNewFactIntent tell me something
+GetNewFactIntent give me something

@@ -1,7 +1,3 @@
-
-
-arn:aws:lambda:us-east-1:573869678907:function:scary
-
 GetNewFactIntent an airhorn
 GetNewFactIntent a scary airhorn
 GetNewFactIntent tell me a airhorn
