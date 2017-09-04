@@ -1,0 +1,8 @@
+GetNewFactIntent an airhorn
+GetNewFactIntent tell me a airhorn
+GetNewFactIntent give me a airhorn
+GetNewFactIntent tell me airhorn
+GetNewFactIntent give me airhorn
+GetNewFactIntent give me some airhorn
+GetNewFactIntent tell me something
+GetNewFactIntent give me something
