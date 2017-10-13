@@ -1,0 +1,7 @@
+GetNewFactIntent not hot
+GetNewFactIntent tell me a not hot
+GetNewFactIntent give me a not hot
+GetNewFactIntent tell me not hot
+GetNewFactIntent give me not hot
+GetNewFactIntent give me some not hot
+GetNewFactIntent give me something
