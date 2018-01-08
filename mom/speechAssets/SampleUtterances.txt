@@ -1,0 +1,7 @@
+GetNewFactIntent get the camera
+GetNewFactIntent get camera
+GetNewFactIntent give me a camera
+GetNewFactIntent tell me a camera
+GetNewFactIntent give me camera
+GetNewFactIntent give me some camera
+GetNewFactIntent give me something
